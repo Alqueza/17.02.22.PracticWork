@@ -1,5 +1,7 @@
 public class Toyota extends Car implements OperateCar{
 
+    public Toyota(){}
+
     public Toyota(String name, String model, String numberOfCar) {
         super(name, model, numberOfCar);
     }
@@ -23,15 +25,13 @@ public class Toyota extends Car implements OperateCar{
     public void go() {
         System.out.println(name + " поехала");
     }
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
-
     @Override
     public void stop() {
         System.out.println(name + " остановилась");
 
+    }
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

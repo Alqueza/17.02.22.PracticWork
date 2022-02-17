@@ -1,9 +1,9 @@
-import java.security.PublicKey;
-
 public class BMW extends Car implements OperateCar{
-
     public BMW(String name, String model, String numberOfCar) {
         super(name, model, numberOfCar);
+    }
+
+    public BMW() {
     }
 
     @Override
@@ -19,9 +19,15 @@ public class BMW extends Car implements OperateCar{
     public void turnRight() {
         System.out.println(name+" повернул(а) на право");
     }
+
     @Override
     public void go() {
         System.out.println(name + " поехала");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println(name + " остановилась");
     }
 
     @Override
@@ -29,8 +35,4 @@ public class BMW extends Car implements OperateCar{
         return super.toString();
     }
 
-    @Override
-    public void stop() {
-        System.out.println(name + " остановилась");
-    }
 }

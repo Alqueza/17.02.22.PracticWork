@@ -4,6 +4,9 @@ public class Tesla extends Car implements OperateCar{
         super(name,model,numberOfCar);
 }
 
+    public Tesla() {
+    }
+
     @Override
     public void turnOn() {
         System.out.println(name + " завелась");
@@ -23,12 +26,12 @@ public class Tesla extends Car implements OperateCar{
     }
 
     @Override
-    public String toString() {
-        return super.toString();
+    public void stop() {
+        System.out.println(name + " остановилась");
     }
 
     @Override
-    public void stop() {
-        System.out.println(name + " остановилась");
+    public String toString() {
+        return super.toString();
     }
 }
