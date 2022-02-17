@@ -1,11 +1,17 @@
-public class Toyota extends Car implements OperateCar{
+package car.box;
 
-    public Toyota(){}
-
-    public Toyota(String name, String model, String numberOfCar) {
+public class BMW extends Car implements OperateCar {
+    public BMW(String name, String model, String numberOfCar) {
         super(name, model, numberOfCar);
     }
 
+    public BMW() {
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println(name + " завелась");
+    }
     @Override
     public void turnLeft() {
         System.out.println(name+" повернул(а) на лево");
@@ -17,21 +23,18 @@ public class Toyota extends Car implements OperateCar{
     }
 
     @Override
-    public void turnOn() {
-        System.out.println(name + " завелась");
-    }
-
-    @Override
     public void go() {
         System.out.println(name + " поехала");
     }
+
     @Override
     public void stop() {
         System.out.println(name + " остановилась");
-
     }
+
     @Override
     public String toString() {
         return super.toString();
     }
+
 }

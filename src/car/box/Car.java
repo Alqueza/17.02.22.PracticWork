@@ -1,3 +1,5 @@
+package car.box;
+
 public abstract class Car {
     public Car(){}
 

@@ -1,9 +1,12 @@
-public class BMW extends Car implements OperateCar{
-    public BMW(String name, String model, String numberOfCar) {
-        super(name, model, numberOfCar);
-    }
+package car.box;
 
-    public BMW() {
+public class Tesla extends Car implements OperateCar{
+
+    public Tesla(String name,String model,String numberOfCar){
+        super(name,model,numberOfCar);
+}
+
+    public Tesla() {
     }
 
     @Override
@@ -19,7 +22,6 @@ public class BMW extends Car implements OperateCar{
     public void turnRight() {
         System.out.println(name+" повернул(а) на право");
     }
-
     @Override
     public void go() {
         System.out.println(name + " поехала");
@@ -34,5 +36,4 @@ public class BMW extends Car implements OperateCar{
     public String toString() {
         return super.toString();
     }
-
 }
